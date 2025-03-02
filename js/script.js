@@ -76,24 +76,32 @@ async function displayAlbums() {
     let cardContainer = document.querySelector(".cardContainer");
 
     for (const link of links) {
-        if (link.href.includes("/songs") && !link.href.endsWith(".htaccess")) {
+        if (link.href.includes("/songs") && link.href.split('/').slice(-2, -1)[0] !== "") {
             let folder = link.href.split("/").slice(-2, -1)[0];
+            let metadata = {
+                title: folder.replace(/_/g, ' '),
+                description: "No description available."
+            };
+
             try {
                 let metadataResponse = await fetch(`/songs/${folder}/info.json`);
-                let metadata = await metadataResponse.json();
-                cardContainer.innerHTML += `<div data-folder="${folder}" class="card">
-                    <div class="play">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5" stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <img src="/songs/${folder}/cover.jpg" alt="">
-                    <h2>${metadata.title}</h2>
-                    <p>${metadata.description}</p>
-                </div>`;
+                if (metadataResponse.ok) {
+                    metadata = await metadataResponse.json();
+                }
             } catch (error) {
-                console.error(`Error fetching metadata for ${folder}:`, error);
+                console.warn(`Metadata for ${folder} not found:`, error);
             }
+
+            cardContainer.innerHTML += `<div data-folder="${folder}" class="card">
+                <div class="play">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <img src="/songs/${folder}/cover.jpg" alt="${metadata.title}" onerror="this.src='img/default_cover.jpg';">
+                <h2>${metadata.title}</h2>
+                <p>${metadata.description}</p>
+            </div>`;
         }
     }
 
