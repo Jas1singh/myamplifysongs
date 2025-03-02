@@ -1,0 +1,13 @@
+<svg width="320" height="200" viewBox="0 0 340 230" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="60" cy="100" r="50" fill="#007BFF"/>
+
+  <!-- Sound Waves -->
+  <path d="M35 90c10-5 30-5 40 0" stroke="white" stroke-width="4" fill="none"/>
+  <path d="M30 100c12-6 32-6 44 0" stroke="white" stroke-width="4" fill="none"/>
+  <path d="M25 110c15-7 35-7 50 0" stroke="white" stroke-width="4" fill="none"/>
+
+  <!-- Text: Amplify -->
+  <text x="130" y="115" font-family="Arial" font-size="44" font-weight="bold" fill="#007BFF">MyAmplify</text>
+</svg>
+
