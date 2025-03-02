@@ -69,25 +69,30 @@ const playMusic = (track, pause = false) => {
 
 async function displayAlbums() {
     console.log("Displaying albums");
-    let response = await fetch(`/songs/`);
-    let responseText = await response.text();
-    let tempDiv = document.createElement("div");
+    const responseText = await fetchWithLogging(`/songs/`);
+    if (!responseText) {
+        console.error("Failed to load albums.");
+        return;
+    }
+
+    const tempDiv = document.createElement("div");
     tempDiv.innerHTML = responseText;
-    let links = tempDiv.getElementsByTagName("a");
-    let cardContainer = document.querySelector(".cardContainer");
+    const links = tempDiv.getElementsByTagName("a");
+    const cardContainer = document.querySelector(".cardContainer");
+    cardContainer.innerHTML = "";
 
     for (const link of links) {
         if (link.href.includes("/songs") && link.href.split('/').slice(-2, -1)[0] !== "") {
-            let folder = link.href.split("/").slice(-2, -1)[0];
+            const folder = link.href.split("/").slice(-2, -1)[0];
             let metadata = {
                 title: folder.replace(/_/g, ' '),
                 description: "No description available."
             };
 
             try {
-                let metadataResponse = await fetch(`/songs/${folder}/info.json`);
-                if (metadataResponse.ok) {
-                    metadata = await metadataResponse.json();
+                const metadataResponse = await fetchWithLogging(`/songs/${folder}/info.json`);
+                if (metadataResponse) {
+                    metadata = JSON.parse(metadataResponse);
                 }
             } catch (error) {
                 console.warn(`Metadata for ${folder} not found:`, error);
@@ -115,11 +120,25 @@ async function displayAlbums() {
         });
     });
 }
+async function fetchWithLogging(url) {
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            console.error(`Error fetching ${url}: ${response.statusText}`);
+            return null;
+        }
+        return await response.text();
+    } catch (error) {
+        console.error(`Error fetching ${url}:`, error);
+        return null;
+    }
+}
 
 async function main() {
     await getSongs("songs/ncs");
     playMusic(songs[0], true);
 
+    await fetchwithLogging(url);
     await displayAlbums();
 
     let playButton = document.getElementById("play");
