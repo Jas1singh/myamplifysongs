@@ -4,6 +4,7 @@ let currentSong = new Audio();
 let songs;
 let currFolder;
 
+
 function secondsToMinutesSeconds(seconds) {
     if (isNaN(seconds) || seconds < 0) {
         return "00:00";
