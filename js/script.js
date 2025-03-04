@@ -1,7 +1,7 @@
 console.log('Lets write JavaScript');
 let currentSong = new Audio();
 let songs;
-let currFolder;
+let currFolder='';
 
 
 function secondsToMinutesSeconds(seconds) {
@@ -20,7 +20,7 @@ function secondsToMinutesSeconds(seconds) {
 
 async function getSongs(folder) {
     currFolder = folder;
-    let a = await fetch(`/${folder}/`)
+    let a = await fetch(`/${folder}`);
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -79,17 +79,18 @@ async function displayAlbums() {
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
-    let anchors = div.getElementsByTagName("a")
+    // let anchors = div.getElementsByTagName("a")
     let cardContainer = document.querySelector(".cardContainer")
-    let array = Array.from(anchors)
+    // let array = Array.from(anchors)
+    let array = ["/songs/Arijit_Singh/info.json", "/songs/sonu/info.json" , "/songs/Love_(mood)/info.json" , "/songs/Old Songs/info.json" , "/songs/Diljit/info.json", "/songs/Sleep_(mood)/info.json"]
     for (let index = 0; index < array.length; index++) {
         const e = array[index]; 
-        if (e.href.includes("/songs") && !e.href.includes(".htaccess")) {
-            let folder = e.href.split("/").slice(-2)[0]
+        if (e.startsWith("/songs")) {
+            let folder = e.split("/").slice(-2)[0]
             // Get the metadata of the folder
             let a = await fetch(`/songs/${folder}/info.json`)
             let response = await a.json(); 
-            cardContainer.innerHTML = cardContainer.innerHTML + ` <div data-folder="${folder}" class="card">
+            cardContainer.innerHTML = cardContainer.innerHTML + `<div data-folder="${folder}" class="card">
             <div class="play">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -104,7 +105,10 @@ async function displayAlbums() {
         </div>`
         }
     }
-
+   
+    console.log("Fetched metadata:", response);
+    
+    
     // Load the playlist whenever card is clicked
     Array.from(document.getElementsByClassName("card")).forEach(e => { 
         e.addEventListener("click", async item => {
@@ -121,7 +125,7 @@ async function displayAlbums() {
 
 async function main() {
     // Get the list of all the songs
-    await getSongs("songs/ncs")
+    await getSongs('songs/ncs')
     playMusic(songs[0], true)
 
     // Display all the albums on the page

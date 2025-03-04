@@ -1,4 +1,0 @@
-/songs/*
-  Access-Control-Allow-Origin: *
-  Content-Type: application/json
-  Cache-Control: no-cache
