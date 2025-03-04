@@ -20,7 +20,7 @@ function secondsToMinutesSeconds(seconds) {
 
 async function getSongs(folder) {
     currFolder = folder;
-    let a = await fetch(`/${folder}`);
+    let a = await fetch(`./${folder}`);
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -99,15 +99,12 @@ async function displayAlbums() {
                 </svg>
             </div>
 
-            <img src="./songs/${folder}/cover.jpg" alt="">
+            <img src="/songs/${folder}/cover.jpg" alt="">
             <h2>${response.title}</h2>
             <p>${response.description}</p>
         </div>`
         }
-    }
-   
-    console.log("Fetched metadata:", response);
-    
+    }   
     
     // Load the playlist whenever card is clicked
     Array.from(document.getElementsByClassName("card")).forEach(e => { 
