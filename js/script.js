@@ -29,7 +29,7 @@ async function getSongs(folder) {
     for (let index = 0; index < as.length; index++) {
         const element = as[index];
         if (element.href.endsWith(".mp3")) {
-            songs.push(element.href.split(`./${folder}/`)[1])
+            songs.push(element.href.split(`/${folder}/`)[1])
         }
     }
  
@@ -99,7 +99,7 @@ async function displayAlbums() {
                 </svg>
             </div>
 
-            <img src="/songs/${folder}/cover.jpg" alt="">
+            <img src="./songs/${folder}/cover.jpg" alt="">
             <h2>${response.title}</h2>
             <p>${response.description}</p>
         </div>`
