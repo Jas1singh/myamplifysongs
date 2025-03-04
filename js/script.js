@@ -30,7 +30,7 @@ async function getSongs(folder) {
         const element = as[index];
         console.log(element)
         if (element.href.endsWith(".mp3")) {
-            songs.push(element.href.split(`./${folder}/`)[1])
+            songs.push(element.href.split(`/${folder}/`)[1])
         }
     }
  
@@ -123,8 +123,8 @@ async function displayAlbums() {
 
 async function main() {
     // Get the list of all the songs
-    // await getSongs('songs/')
-    // playMusic(songs[0], true)
+    await getSongs('songs/Arijit_Singh')
+    playMusic(songs[0], true)
 
     // Display all the albums on the page
      await displayAlbums()
