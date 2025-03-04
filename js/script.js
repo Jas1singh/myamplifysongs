@@ -28,8 +28,9 @@ async function getSongs(folder) {
     songs = []
     for (let index = 0; index < as.length; index++) {
         const element = as[index];
+        console.log(element)
         if (element.href.endsWith(".mp3")) {
-            songs.push(element.href.split(`./${folder}/`)[1])
+            songs.push(element.href.split(`/${folder}/`)[1])
         }
     }
  
@@ -122,11 +123,11 @@ async function displayAlbums() {
 
 async function main() {
     // Get the list of all the songs
-    await getSongs('songs/ncs')
+    await getSongs('songs/')
     playMusic(songs[0], true)
 
     // Display all the albums on the page
-    await displayAlbums()
+     await displayAlbums()
 
 
     // Attach an event listener to play, next and previous
