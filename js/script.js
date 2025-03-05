@@ -1,6 +1,6 @@
 console.log('Lets write JavaScript');
 let currentSong = new Audio();
-let songs;
+let songs='';
 let currFolder='';
 
 
@@ -28,14 +28,11 @@ async function getSongs(folder) {
     songs = []
     for (let index = 0; index < as.length; index++) {
         const element = as[index];
-        console.log(element)
         if (element.href.endsWith(".mp3")) {
             songs.push(element.href.split(`/${folder}/`)[1])
         }
     }
  
-
-
     // Show all the songs in the playlist
     let songUL = document.querySelector(".songList").getElementsByTagName("ul")[0]
     songUL.innerHTML = ""
@@ -83,7 +80,7 @@ async function displayAlbums() {
     // let anchors = div.getElementsByTagName("a")
     let cardContainer = document.querySelector(".cardContainer")
     // let array = Array.from(anchors)
-    let array = ["/songs/Arijit_Singh/info.json", "/songs/sonu/info.json" , "/songs/Love_(mood)/info.json" , "/songs/Old Songs/info.json" , "/songs/Diljit/info.json", "/songs/Sleep_(mood)/info.json"]
+    let array = ["/songs/Arijit_Singh/info.json", "/songs/sonu/info.json" , "/songs/Love_(mood)/info.json" , "/songs/Old_Songs/info.json" , "/songs/Diljit/info.json", "/songs/Sleep_(mood)/info.json"]
     for (let index = 0; index < array.length; index++) {
         const e = array[index]; 
         if (e.startsWith("/songs")) {
@@ -227,10 +224,10 @@ async function main() {
 
 
 // Security to protect the code....
-document.oncontextmenu = () => {
-    alert("Don't try to hack us from right click. 😍🤪");
-    return false;
-}
+// document.oncontextmenu = () => {
+//     alert("Don't try to hack us from right click. 😍🤪");
+//     return false;
+// }
 
 
 document.onkeydown = e => {
