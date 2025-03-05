@@ -1,4 +1,8 @@
 {
     "title": "Sleep Songs",
-    "description": "Songs for you"
+    "description": "Songs for you",
+    "songs":[
+        { "title": "Mohit-Lalwani-Tum-Prem-Ho-Tum-Preet-Ho", "description": "Jarvis", "path": "Mohit-Lalwani-Tum-Prem-Ho-Tum-Preet-Ho.mp3" }
+       
+    ]
 }

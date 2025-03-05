@@ -1,4 +1,9 @@
 {
     "title": "Sonu Nigam",
-    "description": "Sonu Nigam for you"
+    "description": "Sonu Nigam for you",
+    "songs":[
+        { "title": "Abhi Mujh Mein Kahin - Agneepath 128 Kbps", "description": "Jarvis", "path": "Abhi Mujh Mein Kahin - Agneepath 128 Kbps.mp3" },
+        { "title": "Main Agar Kahoon - Om Shanti Om 128 Kbps", "description": "Jarvis", "path": "Main Agar Kahoon - Om Shanti Om 128 Kbps.mp3" }
+       
+    ]
 }

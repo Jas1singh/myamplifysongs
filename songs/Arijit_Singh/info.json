@@ -1,4 +1,13 @@
 {
     "title": "Arijit Singh",
-    "description": "Arijit Singh for you"
+    "description": "Arijit Singh for you",
+    "songs":[
+        { "title": "03 Tum Saath Ho - Tamasha (Arijit Singh) 320Kbps", "description": "Jarvis", "path": "03 Tum Saath Ho - Tamasha (Arijit Singh) 320Kbps.mp3" },
+        { "title": "09 Dil Ke Paas (Indian Version) Arijit Singh 190Kbps", "description": "Jarvis", "path": "09 Dil Ke Paas (Indian Version) Arijit Singh 190Kbps.mp3" },
+        { "title": "Hath Kangan Leke Aana(PaglaSongs)", "description": "Jarvis", "path": "Hath Kangan Leke Aana(PaglaSongs).mp3" },
+        { "title": "Neki Ki Raah - Traffic (Arijit Singh) 190Kbps", "description": "Jarvis", "path": "Neki Ki Raah - Traffic (Arijit Singh) 190Kbps.mp3" },
+        { "title": "Roke Na Ruke Naina (Arijit Singh) 190Kbps", "description": "Jarvis", "path": "Roke Na Ruke Naina (Arijit Singh) 190Kbps.mp3" },
+        { "title": "Tera Yaar Hoon Main - Sonu Ke Titu Ki Sweety", "description": "Jarvis", "path": "Tera Yaar Hoon Main - Sonu Ke Titu Ki Sweety.mp3" },
+        { "title": "Tere Hawaale(PagalWorld.com.pe)", "description": "Jarvis", "path": "Tere Hawaale(PagalWorld.com.pe).mp3" }
+    ]
 }

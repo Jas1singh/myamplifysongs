@@ -1,4 +1,14 @@
 {
     "title": "I Love You",
-    "description": "Love is in the air"
+    "description": "Love is in the air",
+    "songs":[
+        { "title": "128-Tere Mast Mast Do Nain - Dabangg 128 Kbps", "description": "Jarvis", "path": "128-Tere Mast Mast Do Nain - Dabangg 128 Kbps.mp3" },
+        { "title": "03 Hua Hain Aaj Pehli Baar - Sanam Re (Armaan Malik) 190Kbps", "description": "Jarvis", "path": "03 Hua Hain Aaj Pehli Baar - Sanam Re (Armaan Malik) 190Kbps.mp3" },
+        { "title": "Aankhon Mein Tera Hi Chehra(PagalWorld)", "description": "Jarvis", "path": "Aankhon Mein Tera Hi Chehra(PagalWorld).mp3" },
+        { "title": "Chale Aana - De De Pyaar De", "description": "Jarvis", "path": "Chale Aana - De De Pyaar De.mp3" },
+        { "title": "Humsafar - Badrinath Ki Dulhania", "description": "Jarvis", "path": "Humsafar - Badrinath Ki Dulhania.mp3" },
+        { "title": "Kesariya(PagalWorld.com.se)", "description": "Jarvis", "path": "Kesariya(PagalWorld.com.se).mp3" },
+        { "title": "Maan Meri Jaan - King", "description": "Jarvis", "path": "Maan Meri Jaan - King.mp3" },
+        { "title": "Vaaste - Dhvani Bhanushali", "description": "Jarvis", "path": "Vaaste - Dhvani Bhanushali.mp3" }
+    ]
 }

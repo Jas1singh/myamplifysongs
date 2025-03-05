@@ -1,4 +1,11 @@
 {
     "title": "Back to 90'S",
-    "description": "90's Hits for you"
+    "description": "90's Hits for you",
+    "songs":[
+        { "title": "04 - Dholna - DTPH 1997", "description": "Jarvis", "path": "04 - Dholna - DTPH 1997.mp3" },
+        { "title": "05. Dil To Pagal Hai", "description": "Jarvis", "path": "05. Dil To Pagal Hai.mp3" },
+        { "title": "Aankh Hai Bhari Bhari - Kumar Sanu- [MyMp3Bhojpuri.In]", "description": "Jarvis", "path": "Aankh Hai Bhari Bhari - Kumar Sanu- [MyMp3Bhojpuri.In].mp3" },
+        { "title": "DHKMN 1991 - Dil Hai Ke Manta Nahin", "description": "Jarvis", "path": "DHKMN 1991 - Dil Hai Ke Manta Nahin.mp3" },
+        { "title": "Ye Mehadi Ke Boote_64(PagalWorld.com.sb)", "description": "Jarvis", "path": "Ye Mehadi Ke Boote_64(PagalWorld.com.sb).mp3" }
+    ]
 }

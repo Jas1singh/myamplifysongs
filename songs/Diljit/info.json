@@ -1,4 +1,9 @@
 {
     "title": "Diljit Dosanjh",
-    "description": "Diljit Dosanjh hits"
+    "description": "Diljit Dosanjh hits",
+    "songs":[
+        { "title": "Lehnga-Diljit-Dosanjh(Pagal-World.Com.In)", "description": "Jarvis", "path": "Lehnga-Diljit-Dosanjh(Pagal-World.Com.In).mp3" },
+        { "title": "Mombattiye_192(PagalWorld.com.sb)", "description": "Jarvis", "path": "Mombattiye_192(PagalWorld.com.sb).mp3" },
+        { "title": "Naina_Diljit_Dosanjh", "description": "Jarvis", "path": "Naina_Diljit_Dosanjh.mp3" }
+    ]
 }
