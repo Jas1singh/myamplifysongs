@@ -82,6 +82,7 @@ async function getSongs(folder) {
       "/songs/Old_Songs/info.json",
       "/songs/Diljit/info.json",
       "/songs/Sleep_(mood)/info.json",
+      "/songs/Devotional/info.json",
     ];
   
     let cardContainer = document.querySelector(".cardContainer");
