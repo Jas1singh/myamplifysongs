@@ -237,9 +237,9 @@ body {
 }
 
 .songList {
-    height: 570px;
+    height: 560px;
     overflow: auto;
-    margin-bottom: 44px;
+    margin-bottom: 50px;
 }
 
 .hamburger {
@@ -484,12 +484,6 @@ body {
         background: #1d2626;
     }
 
-    .left .footer {
-        margin-bottom: 60px;
-        margin-top: 50px;
-        z-index: 1;
-    }
-
 }
 
 @media (max-width: 500px) {
@@ -532,12 +526,6 @@ body {
     .right .footer {
         font-size: 8px;
         bottom: 5px;
-    }
-
-    .left .footer {
-        margin-bottom: 60px;
-        margin-top: 50px;
-        z-index: 1;
     }
 
 }
