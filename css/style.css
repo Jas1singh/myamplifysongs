@@ -237,7 +237,7 @@ body {
 }
 
 .songList {
-    height: 560px;
+    height: 544px;
     overflow: auto;
     margin-bottom: 50px;
 }
@@ -402,13 +402,9 @@ body {
     }
 
     .songList ul {
-        padding-bottom: 30px;
+        padding-bottom: 80px;
     }
 
-    .songList{
-        padding-bottom: 20px;
-    }
-    
     .left .close {
         position: absolute;
         right: 31px;
@@ -523,11 +519,7 @@ body {
     }
 
     .songList ul {
-        padding-bottom: 30px;
-    }
-
-    .songList{
-        padding-bottom: 20px;
+        padding-bottom: 80px;
     }
 
     .close {
