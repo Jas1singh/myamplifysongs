@@ -401,6 +401,14 @@ body {
         height: 85vh;
     }
 
+    .songList ul {
+        padding-bottom: 30px;
+    }
+
+    .songList{
+        padding-bottom: 20px;
+    }
+    
     .left .close {
         position: absolute;
         right: 31px;
@@ -514,6 +522,14 @@ body {
         height: 85vh;
     }
 
+    .songList ul {
+        padding-bottom: 30px;
+    }
+
+    .songList{
+        padding-bottom: 20px;
+    }
+
     .close {
         display: block;
     }
@@ -521,6 +537,7 @@ body {
 
     .left {
         width: 100vw;
+        height: auto;
     }
 
     .right .footer {
