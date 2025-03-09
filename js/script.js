@@ -124,6 +124,7 @@ async function getSongs(folder) {
   
 
 async function main() {
+
     // Get the list of all the songs
     // await getSongs(folder)
     // playMusic(songs[0], true)
@@ -167,12 +168,14 @@ async function main() {
 
     // Add an event listener for hamburger
     document.querySelector(".hamburger").addEventListener("click", () => {
-        document.querySelector(".left").style.left = "0"
+        document.querySelector(".left").style.left = "0";
+        document.querySelector(".header").style.display = "none";
     })
 
     // Add an event listener for close button
     document.querySelector(".close").addEventListener("click", () => {
-        document.querySelector(".left").style.left = "-120%"
+        document.querySelector(".left").style.left = "-120%";
+        document.querySelector(".header").style.display = "flex";
     })
 
     // Play the next song

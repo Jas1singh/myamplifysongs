@@ -256,7 +256,6 @@ body {
 
 .songList ul {
     padding: 0 12px;
-    margin-bottom: 5px;
 }
 
 .songList ul li {
@@ -398,6 +397,12 @@ body {
         width: auto;
     }
 
+    .songList {
+        height: 80vh;
+        overflow: auto;
+        margin-bottom: 10px;
+    }
+
     .left .close {
         position: absolute;
         right: 31px;
@@ -421,7 +426,7 @@ body {
     .header {
         padding: 7px;
         position: sticky;
-        top:5px;
+        top:0;
         z-index: 1000;
     }
 
@@ -467,7 +472,7 @@ body {
     .cardContainer {
         max-height: unset;
         overflow-y: unset;
-        margin-bottom: 37vh;
+        margin-bottom: 40vh;
     }
 
     .playbar {
@@ -482,9 +487,11 @@ body {
     }
 
     .left .footer {
-        bottom: 60px;
-        margin-top:5px;
+        margin-bottom: 60px;
+        margin-top: 20px;
+        z-index: 1;
     }
+
 }
 
 @media (max-width: 500px) {
@@ -503,7 +510,7 @@ body {
     .header {
         padding: 7px;
         position: sticky;
-        top:5px;
+        top:0;
         z-index: 1000;
     }
 
@@ -515,6 +522,17 @@ body {
         height: 85vh;
     }
 
+    .songList {
+        height: 80vh;
+        overflow: auto;
+        margin-bottom: 10px;
+    }
+
+    .close {
+        display: block;
+    }
+
+
     .left {
         width: 100vw;
     }
@@ -525,8 +543,9 @@ body {
     }
 
     .left .footer {
-        bottom: 60px;
-        margin-top:5px;
+        margin-bottom: 60px;
+        margin-top: 20px;
+        z-index: 1;
     }
 
 }
