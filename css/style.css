@@ -237,7 +237,7 @@ body {
 }
 
 .songList {
-    height: 544px;
+    height: 570px;
     overflow: auto;
     margin-bottom: 44px;
 }
@@ -401,12 +401,6 @@ body {
         height: 85vh;
     }
 
-    .songList {
-        height: auto;
-        overflow: auto;
-        margin-bottom: 100px;
-    }
-
     .left .close {
         position: absolute;
         right: 31px;
@@ -524,12 +518,6 @@ body {
 
     .library {
         height: 85vh;
-    }
-
-    .songList {
-        height: auto;
-        overflow: auto;
-        margin-bottom: 50px;
     }
 
     .close {
