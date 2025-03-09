@@ -82,8 +82,9 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(34 34 34);
+    background-color: rgb(34, 34, 34);
 }
+
 
 .header>* {
     padding: 20px;
@@ -255,6 +256,7 @@ body {
 
 .songList ul {
     padding: 0 12px;
+    margin-bottom: 5px;
 }
 
 .songList ul li {
@@ -416,6 +418,13 @@ body {
         width: 100vw;
     }
 
+    .header {
+        padding: 7px;
+        position: sticky;
+        top:5px;
+        z-index: 1000;
+    }
+
     .playbar {
         width: calc(100vw - 75px);
     }
@@ -458,7 +467,7 @@ body {
     .cardContainer {
         max-height: unset;
         overflow-y: unset;
-        margin-bottom: 35vh;
+        margin-bottom: 37vh;
     }
 
     .playbar {
@@ -470,6 +479,11 @@ body {
         font-size: 12px;
         bottom: 5px;
         background: #1d2626;
+    }
+
+    .left .footer {
+        bottom: 60px;
+        margin-top:5px;
     }
 }
 
@@ -488,6 +502,9 @@ body {
 
     .header {
         padding: 7px;
+        position: sticky;
+        top:5px;
+        z-index: 1000;
     }
 
     .myAmplifyPlaylists h1 {
@@ -505,6 +522,11 @@ body {
     .right .footer {
         font-size: 8px;
         bottom: 5px;
+    }
+
+    .left .footer {
+        bottom: 60px;
+        margin-top:5px;
     }
 
 }
