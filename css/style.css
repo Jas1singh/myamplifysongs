@@ -397,14 +397,14 @@ body {
         width: auto;
     }
 
-    .songList {
-        height: 560px;
-        overflow: auto;
-        margin-bottom: 50px;
+    .library {
+        height: 85vh;
     }
 
-    .library{
-        margin-bottom: 50px;
+    .songList {
+        height: auto;
+        overflow: auto;
+        margin-bottom: 100px;
     }
 
     .left .close {
@@ -492,7 +492,7 @@ body {
 
     .left .footer {
         margin-bottom: 60px;
-        margin-top: 40px;
+        margin-top: 50px;
         z-index: 1;
     }
 
@@ -524,11 +524,10 @@ body {
 
     .library {
         height: 85vh;
-        margin-bottom: 50px;
     }
 
     .songList {
-        height: 560px;
+        height: auto;
         overflow: auto;
         margin-bottom: 50px;
     }
@@ -549,7 +548,7 @@ body {
 
     .left .footer {
         margin-bottom: 60px;
-        margin-top: 40px;
+        margin-top: 50px;
         z-index: 1;
     }
 
