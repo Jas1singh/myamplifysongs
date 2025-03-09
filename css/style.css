@@ -398,8 +398,12 @@ body {
     }
 
     .songList {
-        height: 90vh;
+        height: 560px;
         overflow: auto;
+        margin-bottom: 50px;
+    }
+
+    .library{
         margin-bottom: 50px;
     }
 
@@ -487,7 +491,7 @@ body {
     }
 
     .left .footer {
-        margin-bottom: 56px;
+        margin-bottom: 60px;
         margin-top: 40px;
         z-index: 1;
     }
@@ -520,10 +524,11 @@ body {
 
     .library {
         height: 85vh;
+        margin-bottom: 50px;
     }
 
     .songList {
-        height: 90vh;
+        height: 560px;
         overflow: auto;
         margin-bottom: 50px;
     }
@@ -543,7 +548,7 @@ body {
     }
 
     .left .footer {
-        margin-bottom: 56px;
+        margin-bottom: 60px;
         margin-top: 40px;
         z-index: 1;
     }
