@@ -244,10 +244,10 @@ Array.from(document.querySelectorAll(".songList li")).forEach((e, index) => {
 
 
 // Security to protect the code....
-// document.oncontextmenu = () => {
-//     alert("Don't try to hack us from right click. 😍🤪");
-//     return false;
-// }
+document.oncontextmenu = () => {
+    alert("Don't try to hack us from right click. 😍🤪");
+    return false;
+}
 
 
 document.onkeydown = e => {
